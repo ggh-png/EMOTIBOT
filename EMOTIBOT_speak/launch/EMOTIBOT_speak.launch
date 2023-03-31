@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="EMOTIBOT_speak" name="stt" type="stt.py"/>
+    <node pkg="EMOTIBOT_speak" name="chatgpt1" type="chatgpt1.py"/>
+</launch>

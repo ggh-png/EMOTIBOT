@@ -1,0 +1,105 @@
+Script started on 2023-03-27 16:28:38+09:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="105" LINES="25"]
+************ Neuron Startup Menu for ROS *************
+* Usage: Please select the following options to load *
+*        ROS environment automatically.              *
+******************************************************
+0) Do nothing
+1) ROS 1 noetic 
+2) ROS 2 foxy 
+3) ROS2/ROS1_bridge 
+h) Help
+Please choose an option: 1
+------------------------------------------------------
+* ROS_IP=192.168.0.52
+* ROS_MASTER_URI 192.168.0.52
+------------------------------------------------------
+bash: /home/ingyu/ws_moveit/devel/setup.bash: No such file or directory
+(ROS 1 noetic) ]0;ingyu@ingyu-GP76: ~/catkin_ws/src/EMOTIBOT_head[01;32mingyu@ingyu-GP76[00m:[01;34m~/catkin_ws/src/EMOTIBOT_head[00m$ /sc[Kr[Kc[K[K[Kcd src/[K[K[K[Ksr
+src/ srv/ 
+(ROS 1 noetic) ]0;ingyu@ingyu-GP76: ~/catkin_ws/src/EMOTIBOT_head[01;32mingyu@ingyu-GP76[00m:[01;34m~/catkin_ws/src/EMOTIBOT_head[00m$ cd sr
+src/ srv/ 
+(ROS 1 noetic) ]0;ingyu@ingyu-GP76: ~/catkin_ws/src/EMOTIBOT_head[01;32mingyu@ingyu-GP76[00m:[01;34m~/catkin_ws/src/EMOTIBOT_head[00m$ cd sr[Kcripts/
+(ROS 1 noetic) ]0;ingyu@ingyu-GP76: ~/catkin_ws/src/EMOTIBOT_head/scripts[01;32mingyu@ingyu-GP76[00m:[01;34m~/catkin_ws/src/EMOTIBOT_head/scripts[00m$ ls
+[0m[01;32mchatgpt1.py[0m  [01;32mchatgpt.py[0m  stt_key.json  [01;32mstt.py[0m
+(ROS 1 noetic) ]0;ingyu@ingyu-GP76: ~/catkin_ws/src/EMOTIBOT_head/scripts[01;32mingyu@ingyu-GP76[00m:[01;34m~/catkin_ws/src/EMOTIBOT_head/scripts[00m$ s[Krosrun stt/.[K[K.py
+Usage: rosrun [--prefix cmd] [--debug] PACKAGE EXECUTABLE [ARGS]
+  rosrun will locate PACKAGE and try to find
+  an executable named EXECUTABLE in the PACKAGE tree.
+  If it finds it, it will run it with ARGS.
+(ROS 1 noetic) ]0;ingyu@ingyu-GP76: ~/catkin_ws/src/EMOTIBOT_head/scripts[01;32mingyu@ingyu-GP76[00m:[01;34m~/catkin_ws/src/EMOTIBOT_head/scripts[00m$ rosrun stt.py[K[K[K[K[K[KEMOTIBOT_head stt.py
+ALSA lib pcm_dsnoop.c:641:(snd_pcm_dsnoop_open) unable to open slave
+ALSA lib pcm_dmix.c:1089:(snd_pcm_dmix_open) unable to open slave
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.rear
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.center_lfe
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.side
+ALSA lib pcm_oss.c:377:(_snd_pcm_oss_open) Unknown field port
+ALSA lib pcm_oss.c:377:(_snd_pcm_oss_open) Unknown field port
+ALSA lib pcm_usb_stream.c:486:(_snd_pcm_usb_stream_open) Invalid type for card
+ALSA lib pcm_usb_stream.c:486:(_snd_pcm_usb_stream_open) Invalid type for card
+ALSA lib pcm_dmix.c:1089:(snd_pcm_dmix_open) unable to open slave
+안녕안녕
+(ROS 1 noetic) ]0;ingyu@ingyu-GP76: ~/catkin_ws/src/EMOTIBOT_head/scripts[01;32mingyu@ingyu-GP76[00m:[01;34m~/catkin_ws/src/EMOTIBOT_head/scripts[00m$ rosrun EMOTIBOT_head stt.py
+ALSA lib pcm_dsnoop.c:641:(snd_pcm_dsnoop_open) unable to open slave
+ALSA lib pcm_dmix.c:1089:(snd_pcm_dmix_open) unable to open slave
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.rear
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.center_lfe
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.side
+ALSA lib pcm_oss.c:377:(_snd_pcm_oss_open) Unknown field port
+ALSA lib pcm_oss.c:377:(_snd_pcm_oss_open) Unknown field port
+ALSA lib pcm_usb_stream.c:486:(_snd_pcm_usb_stream_open) Invalid type for card
+ALSA lib pcm_usb_stream.c:486:(_snd_pcm_usb_stream_open) Invalid type for card
+ALSA lib pcm_dmix.c:1089:(snd_pcm_dmix_open) unable to open slave
+안녕안녕
+(ROS 1 noetic) ]0;ingyu@ingyu-GP76: ~/catkin_ws/src/EMOTIBOT_head/scripts[01;32mingyu@ingyu-GP76[00m:[01;34m~/catkin_ws/src/EMOTIBOT_head/scripts[00m$ ^C
+(ROS 1 noetic) ]0;ingyu@ingyu-GP76: ~/catkin_ws/src/EMOTIBOT_head/scripts[01;32mingyu@ingyu-GP76[00m:[01;34m~/catkin_ws/src/EMOTIBOT_head/scripts[00m$ [K(ROS 1 noetic) ]0;ingyu@ingyu-GP76: ~/catkin_ws/src/EMOTIBOT_head/scripts[01;32mingyu@ingyu-GP76[00m:[01;34m~/catkin_ws/src/EMOTIBOT_head/scripts[00m$ [K(ROS 1 noetic) ]0;ingyu@ingyu-GP76: ~/catkin_ws/src/EMOTIBOT_head/scripts[01;32mingyu@ingyu-GP76[00m:[01;34m~/catkin_ws/src/EMOTIBOT_head/scripts[00m$ rosrun EMOTIBOT_head stt.py
+ALSA lib pcm_dsnoop.c:641:(snd_pcm_dsnoop_open) unable to open slave
+ALSA lib pcm_dmix.c:1089:(snd_pcm_dmix_open) unable to open slave
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.rear
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.center_lfe
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.side
+ALSA lib pcm_oss.c:377:(_snd_pcm_oss_open) Unknown field port
+ALSA lib pcm_oss.c:377:(_snd_pcm_oss_open) Unknown field port
+ALSA lib pcm_usb_stream.c:486:(_snd_pcm_usb_stream_open) Invalid type for card
+ALSA lib pcm_usb_stream.c:486:(_snd_pcm_usb_stream_open) Invalid type for card
+ALSA lib pcm_dmix.c:1089:(snd_pcm_dmix_open) unable to open slave
+안녕안녕
+(ROS 1 noetic) ]0;ingyu@ingyu-GP76: ~/catkin_ws/src/EMOTIBOT_head/scripts[01;32mingyu@ingyu-GP76[00m:[01;34m~/catkin_ws/src/EMOTIBOT_head/scripts[00m$ ^C
+(ROS 1 noetic) ]0;ingyu@ingyu-GP76: ~/catkin_ws/src/EMOTIBOT_head/scripts[01;32mingyu@ingyu-GP76[00m:[01;34m~/catkin_ws/src/EMOTIBOT_head/scripts[00m$ rosrun EMOTIBOT_head stt.py
+ALSA lib pcm_dsnoop.c:641:(snd_pcm_dsnoop_open) unable to open slave
+ALSA lib pcm_dmix.c:1089:(snd_pcm_dmix_open) unable to open slave
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.rear
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.center_lfe
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.side
+ALSA lib pcm_oss.c:377:(_snd_pcm_oss_open) Unknown field port
+ALSA lib pcm_oss.c:377:(_snd_pcm_oss_open) Unknown field port
+ALSA lib pcm_usb_stream.c:486:(_snd_pcm_usb_stream_open) Invalid type for card
+ALSA lib pcm_usb_stream.c:486:(_snd_pcm_usb_stream_open) Invalid type for card
+ALSA lib pcm_dmix.c:1089:(snd_pcm_dmix_open) unable to open slave
+안녕안녕
+^C(ROS 1 noetic) ]0;ingyu@ingyu-GP76: ~/catkin_ws/src/EMOTIBOT_head/scripts[01;32mingyu@ingyu-GP76[00m:[01;34m~/catkin_ws/src/EMOTIBOT_head/scripts[00m$ rosrun EMOTIBOT_head stt.py
+ALSA lib pcm_dsnoop.c:641:(snd_pcm_dsnoop_open) unable to open slave
+ALSA lib pcm_dmix.c:1089:(snd_pcm_dmix_open) unable to open slave
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.rear
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.center_lfe
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.side
+ALSA lib pcm_oss.c:377:(_snd_pcm_oss_open) Unknown field port
+ALSA lib pcm_oss.c:377:(_snd_pcm_oss_open) Unknown field port
+ALSA lib pcm_usb_stream.c:486:(_snd_pcm_usb_stream_open) Invalid type for card
+ALSA lib pcm_usb_stream.c:486:(_snd_pcm_usb_stream_open) Invalid type for card
+ALSA lib pcm_dmix.c:1089:(snd_pcm_dmix_open) unable to open slave
+안녕안녕
+output_message: "\uC548\uB155\uD558\uC138\uC694! \uAD81\uAE08\uD558\uC2E0 \uAC83\uC774 \uC788\uC73C\
+  \uBA74 \uC5B8\uC81C\uB4E0\uC9C0 \uBB3C\uC5B4\uBCF4\uC138\uC694. \uB2F5\uBCC0\uD574\
+  \uB4DC\uB9B4\uAC8C\uC694."
+ 아이유 아이유가 아이유가 누구야 아이유가 누구야
+output_message: "\uC544\uC774\uC720\uB294 \uB300\uD55C\uBBFC\uAD6D\uC758 \uAC00\uC218, \uBC30\uC6B0\
+  , \uC791\uACE1\uAC00\uC774\uBA70, \uBCF8\uBA85\uC740 \uC774\uC9C0\uC740\uC785\uB2C8\
+  \uB2E4. \uADF8\uB140\uB294 2008\uB144 Mnet \"Superstar K\"\uC758 \uCD9C\uC5F0\uC744\
+  \ \uD1B5\uD574 \uB370\uBDD4\uD558\uC5EC, \uC774\uD6C4\uB85C \uAFB8\uC900\uD55C \uC74C\
+  \uC545 \uD65C\uB3D9\uACFC \uC5F0\uAE30 \uD65C\uB3D9\uC744 \uD3BC\uCCD0\uC654\uC2B5\
+  \uB2C8\uB2E4. \uB300\uD45C\uC801\uC778 \uB178\uB798\uB85C\uB294 \"Good Day,\" \"\
+  You and I,\" \"Palette,\" \uB4F1\uC774 \uC788\uC2B5\uB2C8\uB2E4. \uB610\uD55C \uC778\
+  \uAE30 \uC788\uB294 \uB4DC\uB77C\uB9C8\uB85C\uB294 \"Hotel Del Luna,\" \"My Mister,\"\
+  \ \uB4F1\uC774 \uC788\uC2B5\uB2C8\uB2E4."
+^C^C
+^C^C^C^C
