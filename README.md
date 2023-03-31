@@ -18,11 +18,11 @@ EMOTIBOT은 다음과 같은 기술 스택을 사용한다.
 
 - STT (Speech-to-Text) : 사용자의 음성 입력을 인식하기 위해 사용된다.
 - TTS (Text-to-Speech) : 로봇의 음성 출력을 위해 사용된다.
-- GPT-3.5 Turbo : 사용자의 감정 상태를 파악하여 대화하기 위해  사용된다.
+- GPT-3.5 Turbo : 사용자의 감정 상태를 파악하여 대화하기 위해 사용된다.
 - OpenCV : 얼굴 인식을 위해 OpenCV의 Cascade Classifier를 사용한다.
-- ROS(Noetic) : 로봇의 다양한 노드 간 통신을 위해  사용된다.
+- ROS(Noetic) : 로봇의 다양한 노드 간 통신을 위해 사용된다.
 - Dynamixel : 로봇의 눈 움직임을 구현하기 위해  사용된다.
-- Arduino : 로봇이의 상태를 neo led를 통해 알아보기 위해  사용된다.
+- Arduino : 로봇이의 상태를 neo led를 통해 알아보기 위해 사용된다.
 
 ### **기능**
 
