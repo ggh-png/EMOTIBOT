@@ -1,5 +1,9 @@
 # EMOTIBOT: Face Tracking and Emotion-Responsive Robot
 
+### Member :
+
+[윤우성(Woosung Yun )](https://github.com/ggh-png) , [최인규](https://github.com/ingyu0808) , [이민혁](https://github.com/robotDevelop), [김대완](https://github.com/dawan0111), [김민호(Minho Kim)](https://github.com/Realminho)
+
 [![Video Label](https://user-images.githubusercontent.com/71277820/229018411-f07b4968-bd42-49c3-8d1f-664b5eae80e9.jpg)](https://youtu.be/6S0_3xPIl98)
 
 ( 위 이미지를 클릭하시면 데모 링크를 보실 수 있습니다.)
