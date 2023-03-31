@@ -1,0 +1,3 @@
+<launch>
+  <node name="neck_controller" pkg="neck_control" type="neck_control.py" output="screen" />
+</launch>

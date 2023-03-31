@@ -1,0 +1,7 @@
+<launch>
+  <!-- camera_tracking_node 노드 실행 -->
+  <!-- <node name="camera_tracking_node" pkg="camera_tracking" type="camera_tracking_node.py" output="screen"/> -->
+    <node name="camera_tracking_node" type="camera_tracking_node.py" pkg="camera_tracking" output="screen"/>
+
+    <include file="$(find neck_control)/launch/neck_control_service.launch" />
+</launch>

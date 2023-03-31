@@ -1,0 +1,545 @@
+Script started on 2023-03-24 20:02:33+09:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="102" LINES="56"]
+]0;ggh@ggh-ZenBook-UX433FN-UX433FN: ~/catkin_ws/src/neck_controller-1/EMOTIBOT_head/camera_tracking[01;32mggh@ggh-ZenBook-UX433FN-UX433FN[00m:[01;34m~/catkin_ws/src/neck_controller-1/EMOTIBOT_head/camera_tracking[00m$ ls[K[Kcd sc ripts/
+]0;ggh@ggh-ZenBook-UX433FN-UX433FN: ~/catkin_ws/src/neck_controller-1/EMOTIBOT_head/camera_tracking/scripts[01;32mggh@ggh-ZenBook-UX433FN-UX433FN[00m:[01;34m~/catkin_ws/src/neck_controller-1/EMOTIBOT_head/camera_tracking/scripts[00m$ ls
+[0m[01;32mcamera_tracking_node.py[0m  [01;32mhaarcascade_frontalface_default.xml[0m
+]0;ggh@ggh-ZenBook-UX433FN-UX433FN: ~/catkin_ws/src/neck_controller-1/EMOTIBOT_head/camera_tracking/scripts[01;32mggh@ggh-ZenBook-UX433FN-UX433FN[00m:[01;34m~/catkin_ws/src/neck_controller-1/EMOTIBOT_head/camera_tracking/scripts[00m$ sudo [K chmode [K[K 777 
+camera_tracking_node.py              haarcascade_frontalface_default.xml
+]0;ggh@ggh-ZenBook-UX433FN-UX433FN: ~/catkin_ws/src/neck_controller-1/EMOTIBOT_head/camera_tracking/scripts[01;32mggh@ggh-ZenBook-UX433FN-UX433FN[00m:[01;34m~/catkin_ws/src/neck_controller-1/EMOTIBOT_head/camera_tracking/scripts[00m$ sudo chmod 777 
+camera_tracking_node.py              haarcascade_frontalface_default.xml
+]0;ggh@ggh-ZenBook-UX433FN-UX433FN: ~/catkin_ws/src/neck_controller-1/EMOTIBOT_head/camera_tracking/scripts[01;32mggh@ggh-ZenBook-UX433FN-UX433FN[00m:[01;34m~/catkin_ws/src/neck_controller-1/EMOTIBOT_head/camera_tracking/scripts[00m$ sudo chmod 777 haarcascade_frontalface_default.xml 
+[sudo] ggh 암호: 
+]0;ggh@ggh-ZenBook-UX433FN-UX433FN: ~/catkin_ws/src/neck_controller-1/EMOTIBOT_head/camera_tracking/scripts[01;32mggh@ggh-ZenBook-UX433FN-UX433FN[00m:[01;34m~/catkin_ws/src/neck_controller-1/EMOTIBOT_head/camera_tracking/scripts[00m$ sudo chmod 777 haarcascade_frontalface_default.xml [C[C[Cls[Kcd scripts/[C[C[Crosrun camera_tracking camera_tracking_node.py 
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/logging/handlers.py", line 69, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.8/logging/handlers.py", line 186, in shouldRollover
+    self.stream.seek(0, 2)  #due to non-posix-compliant Windows feature
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/home/ggh/.ros/log/camera_traking.log'>
+Call stack:
+^C--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/logging/handlers.py", line 69, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.8/logging/handlers.py", line 186, in shouldRollover
+    self.stream.seek(0, 2)  #due to non-posix-compliant Windows feature
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/home/ggh/.ros/log/camera_traking.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/logging/handlers.py", line 69, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.8/logging/handlers.py", line 186, in shouldRollover
+    self.stream.seek(0, 2)  #due to non-posix-compliant Windows feature
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/home/ggh/.ros/log/camera_traking.log'>
+Call stack:
+  File "/home/ggh/catkin_ws/src/neck_controller-1/EMOTIBOT_head/camera_tracking/scripts/camera_tracking_node.py", line 35, in <module>
+    faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=8, minSize=(30, 30))
+^C--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/logging/handlers.py", line 69, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.8/logging/handlers.py", line 186, in shouldRollover
+    self.stream.seek(0, 2)  #due to non-posix-compliant Windows feature
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/home/ggh/.ros/log/camera_traking.log'>
+
+During handling of the above exception, another exception occurred:
+
+^CTraceback (most recent call last):
+  File "/usr/lib/python3.8/logging/handlers.py", line 69, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.8/logging/handlers.py", line 186, in shouldRollover
+    self.stream.seek(0, 2)  #due to non-posix-compliant Windows feature
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/home/ggh/.ros/log/camera_traking.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/logging/handlers.py", line 69, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.8/logging/handlers.py", line 186, in shouldRollover
+    self.stream.seek(0, 2)  #due to non-posix-compliant Windows feature
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/home/ggh/.ros/log/camera_traking.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/logging/__init__.py", line 1089, in emit
+    self.flush()
+  File "/usr/lib/python3.8/logging/__init__.py", line 1069, in flush
+    self.stream.flush()
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 606, in _ros_signal
+    signal_shutdown("signal-"+str(sig))
+^C  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 560, in signal_shutdown
+    _logger.info("signal_shutdown [%s]"%reason)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1446, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1589, in _log
+    self.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1599, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 954, in handle
+    self.emit(record)
+  File "/usr/lib/python3.8/logging/handlers.py", line 73, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1016, in handleError
+    traceback.print_stack(frame, file=sys.stderr)
+  File "/usr/lib/python3.8/traceback.py", line 190, in print_stack
+    print_list(extract_stack(f, limit=limit), file=file)
+  File "/usr/lib/python3.8/traceback.py", line 211, in extract_stack
+    stack = StackSummary.extract(walk_stack(f), limit=limit)
+  File "/usr/lib/python3.8/traceback.py", line 362, in extract
+    linecache.checkcache(filename)
+  File "/usr/lib/python3.8/linecache.py", line 74, in checkcache
+    stat = os.stat(fullname)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 606, in _ros_signal
+    signal_shutdown("signal-"+str(sig))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 560, in signal_shutdown
+    _logger.info("signal_shutdown [%s]"%reason)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1446, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1589, in _log
+    self.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1599, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 954, in handle
+    self.emit(record)
+  File "/usr/lib/python3.8/logging/handlers.py", line 73, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1016, in handleError
+    traceback.print_stack(frame, file=sys.stderr)
+  File "/usr/lib/python3.8/traceback.py", line 190, in print_stack
+    print_list(extract_stack(f, limit=limit), file=file)
+  File "/usr/lib/python3.8/traceback.py", line 25, in print_list
+    print(item, file=file, end="")
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 606, in _ros_signal
+    signal_shutdown("signal-"+str(sig))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 560, in signal_shutdown
+    _logger.info("signal_shutdown [%s]"%reason)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1446, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1589, in _log
+    self.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1599, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 954, in handle
+    self.emit(record)
+  File "/usr/lib/python3.8/logging/handlers.py", line 73, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1006, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+RuntimeError: reentrant call inside <_io.BufferedWriter name='<stderr>'>
+Call stack:
+  File "/home/ggh/catkin_ws/src/neck_controller-1/EMOTIBOT_head/camera_tracking/scripts/camera_tracking_node.py", line 35, in <module>
+    faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=8, minSize=(30, 30))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 606, in _ros_signal
+    signal_shutdown("signal-"+str(sig))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 560, in signal_shutdown
+    _logger.info("signal_shutdown [%s]"%reason)
+Message: 'signal_shutdown [signal-2]'
+Arguments: ()
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/logging/handlers.py", line 69, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.8/logging/handlers.py", line 186, in shouldRollover
+    self.stream.seek(0, 2)  #due to non-posix-compliant Windows feature
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/home/ggh/.ros/log/camera_traking.log'>
+Call stack:
+  File "/home/ggh/catkin_ws/src/neck_controller-1/EMOTIBOT_head/camera_tracking/scripts/camera_tracking_node.py", line 35, in <module>
+    faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=8, minSize=(30, 30))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 606, in _ros_signal
+    signal_shutdown("signal-"+str(sig))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 560, in signal_shutdown
+    _logger.info("signal_shutdown [%s]"%reason)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1446, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1589, in _log
+    self.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1599, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 954, in handle
+    self.emit(record)
+  File "/usr/lib/python3.8/logging/handlers.py", line 71, in emit
+    logging.FileHandler.emit(self, record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1187, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1089, in emit
+    self.flush()
+  File "/usr/lib/python3.8/logging/__init__.py", line 1069, in flush
+    self.stream.flush()
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 606, in _ros_signal
+    signal_shutdown("signal-"+str(sig))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 560, in signal_shutdown
+    _logger.info("signal_shutdown [%s]"%reason)
+Message: 'signal_shutdown [signal-2]'
+Arguments: ()
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/logging/handlers.py", line 69, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.8/logging/handlers.py", line 186, in shouldRollover
+    self.stream.seek(0, 2)  #due to non-posix-compliant Windows feature
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/home/ggh/.ros/log/camera_traking.log'>
+Call stack:
+  File "/home/ggh/catkin_ws/src/neck_controller-1/EMOTIBOT_head/camera_tracking/scripts/camera_tracking_node.py", line 35, in <module>
+    faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=8, minSize=(30, 30))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 606, in _ros_signal
+    signal_shutdown("signal-"+str(sig))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 560, in signal_shutdown
+    _logger.info("signal_shutdown [%s]"%reason)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1446, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1589, in _log
+    self.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1599, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 954, in handle
+    self.emit(record)
+  File "/usr/lib/python3.8/logging/handlers.py", line 71, in emit
+    logging.FileHandler.emit(self, record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1187, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1089, in emit
+    self.flush()
+  File "/usr/lib/python3.8/logging/__init__.py", line 1069, in flush
+    self.stream.flush()
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 606, in _ros_signal
+    signal_shutdown("signal-"+str(sig))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 560, in signal_shutdown
+    _logger.info("signal_shutdown [%s]"%reason)
+Message: 'signal_shutdown [signal-2]'
+Arguments: ()
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/logging/handlers.py", line 69, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.8/logging/handlers.py", line 186, in shouldRollover
+    self.stream.seek(0, 2)  #due to non-posix-compliant Windows feature
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/home/ggh/.ros/log/camera_traking.log'>
+^C--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/logging/handlers.py", line 69, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.8/logging/handlers.py", line 186, in shouldRollover
+    self.stream.seek(0, 2)  #due to non-posix-compliant Windows feature
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/home/ggh/.ros/log/camera_traking.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/logging/handlers.py", line 69, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.8/logging/handlers.py", line 186, in shouldRollover
+    self.stream.seek(0, 2)  #due to non-posix-compliant Windows feature
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/home/ggh/.ros/log/camera_traking.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/logging/__init__.py", line 1089, in emit
+    self.flush()
+  File "/usr/lib/python3.8/logging/__init__.py", line 1069, in flush
+    self.stream.flush()
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 606, in _ros_signal
+    signal_shutdown("signal-"+str(sig))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 560, in signal_shutdown
+    _logger.info("signal_shutdown [%s]"%reason)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1446, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1589, in _log
+    self.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1599, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 954, in handle
+    self.emit(record)
+  File "/usr/lib/python3.8/logging/handlers.py", line 73, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1007, in handleError
+    traceback.print_exception(t, v, tb, None, sys.stderr)
+  File "/usr/lib/python3.8/traceback.py", line 105, in print_exception
+    print(line, file=file, end="")
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 606, in _ros_signal
+    signal_shutdown("signal-"+str(sig))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 560, in signal_shutdown
+    _logger.info("signal_shutdown [%s]"%reason)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1446, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1589, in _log
+    self.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1599, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 954, in handle
+    self.emit(record)
+  File "/usr/lib/python3.8/logging/handlers.py", line 73, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1006, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+RuntimeError: reentrant call inside <_io.BufferedWriter name='<stderr>'>
+Call stack:
+  File "/home/ggh/catkin_ws/src/neck_controller-1/EMOTIBOT_head/camera_tracking/scripts/camera_tracking_node.py", line 35, in <module>
+    faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=8, minSize=(30, 30))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 606, in _ros_signal
+    signal_shutdown("signal-"+str(sig))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 560, in signal_shutdown
+    _logger.info("signal_shutdown [%s]"%reason)
+Message: 'signal_shutdown [signal-2]'
+Arguments: ()
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C--- Logging error ---
+^C--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/logging/handlers.py", line 69, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.8/logging/handlers.py", line 186, in shouldRollover
+    self.stream.seek(0, 2)  #due to non-posix-compliant Windows feature
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/home/ggh/.ros/log/camera_traking.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/logging/handlers.py", line 69, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.8/logging/handlers.py", line 186, in shouldRollover
+    self.stream.seek(0, 2)  #due to non-posix-compliant Windows feature
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/home/ggh/.ros/log/camera_traking.log'>
+Call stack:
+  File "/home/ggh/catkin_ws/src/neck_controller-1/EMOTIBOT_head/camera_tracking/scripts/camera_tracking_node.py", line 95, in <module>
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 606, in _ros_signal
+    signal_shutdown("signal-"+str(sig))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 560, in signal_shutdown
+    _logger.info("signal_shutdown [%s]"%reason)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1446, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1589, in _log
+    self.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1599, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 954, in handle
+    self.emit(record)
+  File "/usr/lib/python3.8/logging/handlers.py", line 71, in emit
+    logging.FileHandler.emit(self, record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1187, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1089, in emit
+    self.flush()
+  File "/usr/lib/python3.8/logging/__init__.py", line 1069, in flush
+    self.stream.flush()
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 606, in _ros_signal
+    signal_shutdown("signal-"+str(sig))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 560, in signal_shutdown
+    _logger.info("signal_shutdown [%s]"%reason)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1446, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1589, in _log
+    self.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1599, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 954, in handle
+    self.emit(record)
+  File "/usr/lib/python3.8/logging/handlers.py", line 73, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1007, in handleError
+    traceback.print_exception(t, v, tb, None, sys.stderr)
+  File "/usr/lib/python3.8/traceback.py", line 103, in print_exception
+    for line in TracebackException(
+  File "/usr/lib/python3.8/traceback.py", line 508, in __init__
+    self.stack = StackSummary.extract(
+  File "/usr/lib/python3.8/traceback.py", line 362, in extract
+    linecache.checkcache(filename)
+  File "/usr/lib/python3.8/linecache.py", line 74, in checkcache
+    stat = os.stat(fullname)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 606, in _ros_signal
+    signal_shutdown("signal-"+str(sig))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 560, in signal_shutdown
+    _logger.info("signal_shutdown [%s]"%reason)
+Message: 'signal_shutdown [signal-2]'
+Arguments: ()
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/logging/handlers.py", line 69, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.8/logging/handlers.py", line 186, in shouldRollover
+    self.stream.seek(0, 2)  #due to non-posix-compliant Windows feature
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/home/ggh/.ros/log/camera_traking.log'>
+Call stack:
+  File "/home/ggh/catkin_ws/src/neck_controller-1/EMOTIBOT_head/camera_tracking/scripts/camera_tracking_node.py", line 95, in <module>
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 606, in _ros_signal
+    signal_shutdown("signal-"+str(sig))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 560, in signal_shutdown
+    _logger.info("signal_shutdown [%s]"%reason)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1446, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1589, in _log
+    self.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1599, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 954, in handle
+    self.emit(record)
+  File "/usr/lib/python3.8/logging/handlers.py", line 71, in emit
+    logging.FileHandler.emit(self, record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1187, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1089, in emit
+    self.flush()
+  File "/usr/lib/python3.8/logging/__init__.py", line 1069, in flush
+    self.stream.flush()
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 606, in _ros_signal
+    signal_shutdown("signal-"+str(sig))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 560, in signal_shutdown
+    _logger.info("signal_shutdown [%s]"%reason)
+Message: 'signal_shutdown [signal-2]'
+Arguments: ()
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/logging/handlers.py", line 69, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.8/logging/handlers.py", line 186, in shouldRollover
+    self.stream.seek(0, 2)  #due to non-posix-compliant Windows feature
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/home/ggh/.ros/log/camera_traking.log'>
+Call stack:
+  File "/home/ggh/catkin_ws/src/neck_controller-1/EMOTIBOT_head/camera_tracking/scripts/camera_tracking_node.py", line 35, in <module>
+    faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=8, minSize=(30, 30))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 606, in _ros_signal
+    signal_shutdown("signal-"+str(sig))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 560, in signal_shutdown
+    _logger.info("signal_shutdown [%s]"%reason)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1446, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1589, in _log
+    self.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1599, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 954, in handle
+    self.emit(record)
+  File "/usr/lib/python3.8/logging/handlers.py", line 71, in emit
+    logging.FileHandler.emit(self, record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1187, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1089, in emit
+    self.flush()
+  File "/usr/lib/python3.8/logging/__init__.py", line 1069, in flush
+    self.stream.flush()
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 606, in _ros_signal
+    signal_shutdown("signal-"+str(sig))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 560, in signal_shutdown
+    _logger.info("signal_shutdown [%s]"%reason)
+Message: 'signal_shutdown [signal-2]'
+Arguments: ()
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/logging/handlers.py", line 69, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.8/logging/handlers.py", line 186, in shouldRollover
+    self.stream.seek(0, 2)  #due to non-posix-compliant Windows feature
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/home/ggh/.ros/log/camera_traking.log'>
+Call stack:
+  File "/home/ggh/catkin_ws/src/neck_controller-1/EMOTIBOT_head/camera_tracking/scripts/camera_tracking_node.py", line 35, in <module>
+    faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=8, minSize=(30, 30))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 606, in _ros_signal
+    signal_shutdown("signal-"+str(sig))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 560, in signal_shutdown
+    _logger.info("signal_shutdown [%s]"%reason)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1446, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1589, in _log
+    self.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1599, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 954, in handle
+    self.emit(record)
+  File "/usr/lib/python3.8/logging/handlers.py", line 71, in emit
+    logging.FileHandler.emit(self, record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1187, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1089, in emit
+    self.flush()
+  File "/usr/lib/python3.8/logging/__init__.py", line 1069, in flush
+    self.stream.flush()
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 606, in _ros_signal
+    signal_shutdown("signal-"+str(sig))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 560, in signal_shutdown
+    _logger.info("signal_shutdown [%s]"%reason)
+Message: 'signal_shutdown [signal-2]'
+Arguments: ()
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C--- Logging error ---
+^C--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/logging/handlers.py", line 69, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.8/logging/handlers.py", line 186, in shouldRollover
+    self.stream.seek(0, 2)  #due to non-posix-compliant Windows feature
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/home/ggh/.ros/log/camera_traking.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/logging/handlers.py", line 69, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.8/logging/handlers.py", line 186, in shouldRollover
+    self.stream.seek(0, 2)  #due to non-posix-compliant Windows feature
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/home/ggh/.ros/log/camera_traking.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/logging/__init__.py", line 1089, in emit
+    self.flush()
+  File "/usr/lib/python3.8/logging/__init__.py", line 1069, in flush
+    self.stream.flush()
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 606, in _ros_signal
+    signal_shutdown("signal-"+str(sig))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 560, in signal_shutdown
+    _logger.info("signal_shutdown [%s]"%reason)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1446, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1589, in _log
+    self.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1599, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 954, in handle
+    self.emit(record)
+  File "/usr/lib/python3.8/logging/handlers.py", line 73, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1006, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 606, in _ros_signal
+    signal_shutdown("signal-"+str(sig))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/core.py", line 560, in signal_shutdown
+    _logger.info("signal_shutdown [%s]"%reason)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1446, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1589, in _log
+    self.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1599, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 954, in h

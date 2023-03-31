@@ -1,0 +1,4 @@
+<launch>
+  <node name="neck_controller" pkg="neck_control" type="neck_control_service.py" output="screen" />
+  <include file="$(find dynamixel_workbench_controllers)/launch/dynamixel_controllers.launch" />
+</launch>
