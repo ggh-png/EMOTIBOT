@@ -1,0 +1,10 @@
+<launch>
+  <!-- Launch camera_tracking node -->
+  <include file="$(find camera_tracking)/launch/camera_tracking.launch"/>
+
+  <!-- Launch EMOTIBOT_speak node -->
+  <node pkg="EMOTIBOT_speak" type="stt.py" name="stt_node"/>
+  <node pkg="EMOTIBOT_speak" type="chatgpt1.py" name="chatgpt_node"/>
+
+  <!-- Add any other nodes or parameters you need here -->
+</launch>
