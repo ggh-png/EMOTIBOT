@@ -1,64 +1,46 @@
 #include <Adafruit_NeoPixel.h>
+#include <ros.h>
+#include <std_msgs/String.h>
 
 #define PIN 6
 
-#include <ros.h>
-#include <std_msgs/String.h>
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(16, PIN, NEO_GRB + NEO_KHZ800);
 
 ros::NodeHandle  nh;
-
-
 std_msgs::String str_msg;
 ros::Publisher neo("neo_state", &str_msg);
 
 int mode = 0;
+
 void messageCb( const std_msgs::String& toggle_msg){
   String str = toggle_msg.data;
   if(str == "speaking")
-  {
     mode = 1;
-    digitalWrite(LED_BUILTIN, LOW);
-//    digitalWrite(LED_BUILTIN, HIGH);
-//    rainbowCycle(5);
-//    delay(3000);  
-//    strip.begin();
-  }
   else if(str == "wait")
-  {
     mode = 0;
-    digitalWrite(LED_BUILTIN, HIGH);
-//    digitalWrite(LED_BUILTIN, LOW);
-//    rainbow(20);
-//    delay(3000);  
-//    strip.begin();
-  }
 }
 
 
 ros::Subscriber<std_msgs::String> sub("EMOTI/neo", messageCb );
 
 
-void setup() {
+void setup() 
+{
   nh.initNode();
-//  nh.advertise(neo_state);sp
   nh.subscribe(sub);
-  pinMode(LED_BUILTIN, OUTPUT);
-//  Serial.begin(57600);
-  strip.begin(); //네오픽셀을 초기화하기 위해 모든LED를 off시킨다
+  strip.begin(); 
+  //네오픽셀을 초기화하기 위해 모든LED를 off시킨다
   strip.show(); 
 }
 
-void loop() {
-  if (mode == 0) {
+void loop() 
+{
+  if (mode == 0) 
     rainbow(20);
-  } else {
-    digitalWrite(LED_BUILTIN, HIGH);
-    // colorWipe(strip.Color(255, 0, 0), 20);
-    rainbowCycle(20);
-  }
-  nh.spinOnce();
   
+  else 
+    rainbowCycle(20);
+  nh.spinOnce();
 }
 
 //NeoPixel에 달린 LED를 각각 주어진 인자값 색으로 채워나가는 함수
