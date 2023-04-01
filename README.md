@@ -40,9 +40,12 @@ EMOTIBOT의 기능은 다음과 같다.
 
 ![emoti2](https://user-images.githubusercontent.com/71277820/229018453-7f779820-db51-48f2-86ec-d5417581d183.jpeg)
 
-### ****Software Architecture**** & Workflow
+### Workflow & NodeGraph
 
 ---
+
+![emotiflow](https://user-images.githubusercontent.com/71277820/229275157-437aedc9-78b6-4813-8798-c089c40bcf09.png)
+
 
 ![EMOTI_graph](https://user-images.githubusercontent.com/71277820/229018476-8cc22a08-1a2a-4687-bc25-529a08dde858.png)
 
