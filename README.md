@@ -4,7 +4,7 @@
 
 [윤우성(Woosung Yun )](https://github.com/ggh-png) , [최인규(Ingyu Choi)](https://github.com/ingyu0808), [이민혁(Minhyuk Lee)](https://github.com/robotDevelop), [김대완(Daewan Kim)](https://github.com/dawan0111), [김민호(Minho Kim)](https://github.com/Realminho), [김경현(Kyunghyun Kim)](https://github.com/Kyung-Hyun36), [고건영(Geonyoeng Go)](https://github.com/GogeonYoeng), [김시온(Sion Kim)](https://github.com/kkksion), [이현승(Hyunseung Lee)](https://github.com/lhs7358)
 
-[![Video Label](https://user-images.githubusercontent.com/71277820/229018411-f07b4968-bd42-49c3-8d1f-664b5eae80e9.jpg)](https://youtu.be/6S0_3xPIl98)
+[![Video Label](https://user-images.githubusercontent.com/71277820/229018411-f07b4968-bd42-49c3-8d1f-664b5eae80e9.jpg)][(https://youtu.be/6S0_3xPIl98)](https://www.youtube.com/watch?v=m5WHLP0AGW0&t=1s)
 
 ( 위 이미지를 클릭하시면 데모 링크를 보실 수 있습니다.)
 
